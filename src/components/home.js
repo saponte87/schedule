@@ -4,8 +4,7 @@ import React, { Component } from 'react';
   render() {
     return (
       <div className='home'>
-        <h1>Course Schedule</h1>
-        
+        <h1>Course Schedule</h1>      
       </div>
     );
   }
