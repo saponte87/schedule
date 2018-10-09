@@ -1,9 +1,10 @@
 @import 'variables';
 @import 'library';
-@import 'librarycourse';
+@import 'libraryCourse';
 @import 'arrow';
 @import 'schedule';
-@import 'schedulecourse';
+@import 'scheduleCourse';
+@import 'progressTracker';
 
 .home {
     height: 100vh;
@@ -14,14 +15,14 @@
     grid-template-rows: 1fr;
 }
 
+
+
 .schedule {
     grid-column: schedule-s/schedule-e;
     position: relative;
     height: 100%;
     width: 100%;
 }
-
-
 
 .gradient {
     position: absolute;
