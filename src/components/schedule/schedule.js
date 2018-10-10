@@ -5,6 +5,7 @@ import Gradient from '../gradient';
 import ScheduleCourse from './scheduleCourse';
 import ProgressTracker from './progressTracker';
 
+
 class Schedule extends Component {
 
     renderCourses() {
@@ -20,7 +21,7 @@ class Schedule extends Component {
         return (
             <div className="schedule">
                 <h1 className="schedule__title">My Schedule</h1>
-                 
+                { this.renderCourses() }
                 <ProgressTracker/>
                 <Gradient/>
             </div>
