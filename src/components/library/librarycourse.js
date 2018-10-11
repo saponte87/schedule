@@ -49,8 +49,6 @@ class LibraryCourse extends Component {
           onClick={() => this.props.toggleEnrolled(this.props.id)}
           className="library-course__action"
         />
-
-        {this.renderAction()}
         <AnimateHeight
           duration={300}
           height={this.state.height}
