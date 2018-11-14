@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 import Gradient from '../gradient';
 import ScheduleCourse from './scheduleCourse';
 import ProgressTracker from './progressTracker';
-
 
 class Schedule extends Component {
 
@@ -14,10 +13,12 @@ class Schedule extends Component {
         return data.map((course, index) => {
             if(course.enrolled && this.amountEnrolled != 5) {
                 this.amountEnrolled++;
-            return <ScheduleCourse {...course} key={index}/>
+                return <ScheduleCourse {...course} key={index}/>
             }
         })
     }
+
+
     render() {
         this.amountEnrolled = 0
         return (
